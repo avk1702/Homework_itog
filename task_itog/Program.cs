@@ -1,11 +1,11 @@
-﻿void SecondArray(string[] array_first, string[] array_second)
+﻿void SecondArray(string[] arrayFirst, string[] arraySecond)
 {
     int count = 0;
-    for (int i = 0; i < array_first.Length; i++)
+    for (int i = 0; i < arrayFirst.Length; i++)
     {
-    if(array_first[i].Length <= 3)
+    if(arrayFirst[i].Length <= 3)
         {
-        array_second[count] = array_first[i];
+        arraySecond[count] = arrayFirst[i];
         count++;
         }
     }
@@ -18,7 +18,7 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
-string[] array_first = new string[6] {"Тобол", "145", "number", "45", "Тверь", "Ок"};
-string[] array_second = new string[array_first.Length];
-SecondArray(array_first, array_second);
-PrintArray(array_second);
+string[] arrayFirst = new string[6] {"Тобол", "145", "number", "45", "Тверь", "Ок"};
+string[] arraySecond = new string[arrayFirst.Length];
+SecondArray(arrayFirst, arraySecond);
+PrintArray(arraySecond);
